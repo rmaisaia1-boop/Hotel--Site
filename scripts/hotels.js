@@ -2,10 +2,38 @@
   var root = document.getElementById('hotelList');
   if (!root) return;
   var hotels = [
-    { title: 'Hotel Paradise Bravo', image: '/Hotel-1.webp', price: 220, rating: 4.8, location: 'ბათუმი' },
-    { title: 'Hotel Monblan', image: '/Hotel-4.jpg', price: 180, rating: 4.7, location: 'გუდაური' },
-    { title: 'Hotel Paradise India', image: '/Hotel-3.webp', price: 260, rating: 4.9, location: 'თბილისი' },
-  ];
+  {
+    id: 1,
+    title: 'Hotel Paradise Bravo',
+    image: '/Hotel-1.webp',
+    price: 220,
+    location: 'ბათუმი',
+    description: 'ზღვისპირა სასტუმრო ბათუმში. დიდი აუზი, საუზმე და ვახშამი შედის.',
+    amenities: ['უფასო Wi-Fi', 'საუზმე', 'ღია აუზი', 'ფიტნეს დარბაზი'],
+    policies: ['ჩექინი: 14:00', 'ჩექაუთი: 11:00', 'გაუქმება: 24 საათით ადრე']
+  },
+  {
+    id: 2,
+    title: 'Hotel Monblan',
+    image: '/Hotel-4.jpg',
+    price: 180,
+    location: 'გუდაური',
+    description: 'მთის ხედები და თბილი სპა ზონა გუდაურში.',
+    amenities: ['სპა', 'სკის ინვენტარი', 'პარკინგი', 'რესტორანი'],
+    policies: ['ჩექინი: 15:00', 'ჩექაუთი: 11:00', 'გაუქმება: 24 საათით ადრე']
+  },
+  {
+    id: 3,
+    title: 'Hotel Paradise India',
+    image: '/Hotel-3.webp',
+    price: 260,
+    location: 'თბილისი',
+    description: 'თბილისში პრემიუმ სერვისი, ავტორეული სამზარეულო.',
+    amenities: ['რესტორანი', 'ბარი', 'კონფერენციის ოთახი', '24/7 კონსიერჟი'],
+    policies: ['რეგისტრაცია პირადობით აუცილებელია', 'ჩექინი: 15:00', 'ჩექაუთი: 11:00', 'გაუქმება: 24 საათით ადრე']
+  }
+];
+
 
   function toQuery(obj) {
     var p = new URLSearchParams();

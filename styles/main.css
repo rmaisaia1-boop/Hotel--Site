@@ -391,3 +391,43 @@ form .btn {
 .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
 .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
 .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+
+
+.comments {
+  margin-top: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  animation: fadeIn .4s ease-in-out;
+}
+
+.comment {
+  padding: 10px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment strong {
+  display: block;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.comment em {
+  color: #475569;
+  font-size: 13px;
+}
+
+.comment p {
+  margin: 4px 0 0;
+  color: #334155;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
